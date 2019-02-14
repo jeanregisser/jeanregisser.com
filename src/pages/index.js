@@ -7,6 +7,7 @@ import {
   faTwitter,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
+import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
