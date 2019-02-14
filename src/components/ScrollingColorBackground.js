@@ -39,6 +39,10 @@ function getElementOffset(el) {
 }
 
 function getColorPositions({ selector, colorDataAttribute }) {
+  // Workaround SSR
+  if (typeof document === "undefined") {
+    return [];
+  }
   return Array.from(document.querySelectorAll(selector)).map(el => {
     return {
       rgbString: el.getAttribute(colorDataAttribute),
