@@ -1,0 +1,31 @@
+/* .scrolling-background {
+  position: absolute;
+} */
+
+.header {
+  position: relative;
+  /* z-index: 1; */
+  height: 100vh;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  font-size: 30px;
+  text-align: center;
+}
+
+.header > h1 {
+  margin-top: 0;
+}
+
+.social-links {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.wrapper {
+  scroll-snap-align: start;
+  /* background-color: transparent; */
+}

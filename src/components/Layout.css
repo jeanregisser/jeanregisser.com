@@ -1,0 +1,27 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: lightgray;
+  transition: background-color 0.5s;
+}
+
+body.snap {
+  scroll-snap-type: y mandatory;
+}
+
+a {
+  color: #43a699;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+a:hover,
+a:focus {
+  color: #43a699;
+  transform: translate3d(0, -0.1rem, 0);
+}

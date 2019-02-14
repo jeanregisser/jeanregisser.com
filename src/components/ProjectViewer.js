@@ -1,0 +1,80 @@
+import React from "react";
+import { Zoom, Slide, Fade } from "react-reveal";
+import Img from "gatsby-image";
+import chroma from "chroma-js";
+import classNames from "classnames";
+
+import ProjectIcon from "./ProjectIcon";
+import Device from "./Device";
+
+import "./ProjectViewer.module.css";
+
+const ProjectViewer = ({ project }) => {
+  const backgroundColor = project.color || "#ccc";
+  // See https://github.com/gka/chroma.js/issues/181#issuecomment-423884867
+  const isDarkBackground = chroma(backgroundColor).get("lab.l") < 80;
+
+  return (
+    <div
+      className="js-color-stop"
+      data-background-color={backgroundColor}
+      styleName="snap"
+      style={{ height: "100vh" }}
+    >
+      <div styleName="project">
+        <div styleName="inner-container">
+          <div styleName="background">
+            <Slide right>
+              <div
+                styleName={classNames("background-text", {
+                  dark: !isDarkBackground,
+                })}
+              >
+                {project.name}
+              </div>
+            </Slide>
+          </div>
+          <div styleName="slide first-slide">
+            <Fade bottom>
+              <h2 styleName={classNames("title", { dark: !isDarkBackground })}>
+                {project.name}
+              </h2>
+            </Fade>
+
+            <Slide left>
+              <div styleName="icon-container">
+                <ProjectIcon icon={project.icon} />
+              </div>
+            </Slide>
+          </div>
+          {project.screenshots && (
+            <Slide right>
+              <div />
+              {project.screenshots.map(({ device, image }) => (
+                <div key={image.id} styleName="slide">
+                  <Device
+                    device={device}
+                    landscape={image.childImageSharp.fluid.aspectRatio > 1}
+                  >
+                    <Img
+                      fluid={image.childImageSharp.fluid}
+                      style={
+                        {
+                          // width: "100%",
+                          // "box-shadow":
+                          //   "0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 60px 200px 0 rgba(0, 0, 0, 0.19)",
+                        }
+                      }
+                    />
+                  </Device>
+                </div>
+              ))}
+            </Slide>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectViewer;

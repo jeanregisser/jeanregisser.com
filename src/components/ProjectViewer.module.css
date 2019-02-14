@@ -1,0 +1,104 @@
+.snap {
+  scroll-snap-align: start;
+}
+
+.project {
+  position: relative;
+  /* width: 100vw; */
+  height: 100vh;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /*
+   * Enable hardware compositing in modern browsers.
+   * Creates a new layer with its own backing surface that can significantly
+   * improve scroll performance.
+   */
+  /* transform: [{ translateZ: 0 }]; */
+  /* iOS native scrolling */
+  -webkit-overflow-scrolling: touch;
+}
+
+.inner-container {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.background-text {
+  /* display: flex; */
+  position: absolute;
+  display: block;
+  margin: 0;
+  left: 15vw;
+  /* overflow: hidden; */
+  bottom: 0px;
+  font-size: 350px;
+  font-weight: bolder;
+  line-height: 240px;
+  color: rgba(255, 255, 255, 0.06);
+  text-transform: uppercase;
+  letter-spacing: 12.666667;
+  white-space: nowrap;
+}
+
+.background-text.dark {
+  color: rgba(0, 0, 0, 0.06);
+}
+
+.slide {
+  position: relative;
+  scroll-snap-align: center;
+  /* min-width: 100vw; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.first-slide {
+  scroll-snap-align: start;
+  width: 80vw;
+  justify-content: start;
+  align-items: start;
+  margin-left: 0px;
+  margin-right: -40px;
+}
+
+.title {
+  height: 10%;
+  color: white;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  font-weight: normal;
+}
+
+.title.dark {
+  color: black;
+}
+
+.icon-container {
+  align-self: stretch;
+  display: flex;
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  background-color: white;
+}

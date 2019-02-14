@@ -1,0 +1,43 @@
+.marvel-device-container {
+  /* background-color: brown; */
+}
+
+@media screen and (min-aspect-ratio: 423/877) {
+  .marvel-device-container {
+    /* background-color: yellow; */
+  }
+  .marvel-device.iphone8 {
+    /* transform: scale(calc(100vh / 877)); */
+    font-size: calc(0.1px + 0.08vh);
+  }
+}
+
+@media screen and (max-aspect-ratio: 423/877) {
+  .marvel-device-container {
+    /* background-color: pink; */
+  }
+  .marvel-device.iphone8 {
+    /* transform: scale(calc(100vw / 423)); */
+    font-size: calc(0.1px + 0.08vw);
+  }
+}
+
+@media screen and (min-aspect-ratio: 940/618) {
+  .marvel-device-container {
+    /* background-color: blue; */
+  }
+  .marvel-device.ipad {
+    /* transform: scale(calc(100vh / 877)); */
+    font-size: calc(0.1px + 0.08vh);
+  }
+}
+
+@media screen and (max-aspect-ratio: 940/618) {
+  .marvel-device-container {
+    /* background-color: green; */
+  }
+  .marvel-device.ipad {
+    /* transform: scale(calc(100vw / 423)); */
+    font-size: calc(0.1px + 0.08vw);
+  }
+}

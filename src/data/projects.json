@@ -1,0 +1,121 @@
+[
+  {
+    "keywords": [
+      "iOS",
+      "Android",
+      "React Native",
+      "Firebase",
+      "Firestore",
+      "Backend"
+    ],
+    "name": "Caribu 3",
+    "color": "#c7eafe",
+    "icon": "./caribu/icon.png",
+    "description": "Caribu lets you video-call and read no matter where you are, so you never miss another story time.",
+    "screenshots": [
+      {
+        "device": "ipad",
+        "image": "./caribu/s1.jpg"
+      }
+    ]
+  },
+  {
+    "keywords": ["iOS", "Accessory", "React Native", "DVB-T", "SDK"],
+    "name": "US Open - Charge & Watch",
+    "description": "Chase Charge & Watch is a complimentary portable device capable of charging your phone and lets you watch video data-free from the live event you’re attending. Crossfield built the device’s software while its parent company, FanVision, designed the hardware."
+  },
+  {
+    "keywords": [
+      "Android",
+      "React Native",
+      "React Native Navigation",
+      "CouchDB",
+      "Backend"
+    ],
+    "name": "NASCAR Hall of Fame museum",
+    "description": "Built the multimedia tour guide running in kiosk mode on FanVision/Racing Electronics LEGEND device."
+  },
+  {
+    "keywords": [
+      "Android",
+      "React Native",
+      "Redux",
+      "Dexie",
+      "React Navigation"
+    ],
+    "name": "Legend Stopwatch",
+    "description": "Official stopwatch app on FanVision/Racing Electronics LEGEND device. LEGEND from Racing Electronics is \"The Future of the Fan Experience.\" Featuring FanVision video, in-car cameras and stats at major national series events, as well as the next generation scanner for uncensored driver and crew audio at any motorsports event. Coming soon! Visit www.racingelectronics.com to learn more."
+  },
+  {
+    "keywords": ["iOS", "Accessory", "React Native", "DVB-T", "SDK"],
+    "name": "FanVision - Presidents Cup",
+    "description": ""
+  },
+  {
+    "keywords": ["iOS", "Android", "React Native", "WordPress"],
+    "name": "Red Bull Global Rallycross",
+    "color": "rgb(47, 33, 131)",
+    "icon": "./rbgrc/icon.png",
+    "description": "Red Bull Global Rallycross hired Crossfield Digital to create an application where fans receive real time news, event updates, videos and most importantly, live race results in real time. The mobile app is powered by React Native with ~95% code sharing between iOS and Android. The app navigation is based on React Navigation. It also communicates with a Wordpress API with custom endpoints. Crossfield integrated a variety of third party applications including OneSignal for push notifications and Firebase Analytics.",
+    "screenshots": [
+      {
+        "device": "iphone8",
+        "image": "./rbgrc/s1.png"
+      },
+      {
+        "device": "iphone8",
+        "image": "./rbgrc/s2.png"
+      },
+      {
+        "device": "iphone8",
+        "image": "./rbgrc/s3.png"
+      }
+    ]
+  },
+  {
+    "url": "",
+    "keywords": ["iOS", "Android", "React Native", "GraphQL", "WebSocket"],
+    "name": "Fanchise - Salt Lake Screaming Eagles",
+    "color": "#22086d",
+    "description": "A GraphQL API powering React website, and a websocket-based system for real-time playcalling. Written in Elixir using Phoenix Channels. Featured in NYT: https://www.nytimes.com/2017/02/17/sports/football/indoor-football-league-screaming-eagles.html"
+  },
+  {
+    "keywords": ["iOS", "ReactiveCocoa"],
+    "name": "MLB PrePlay",
+    "color": "#91b724",
+    "description": ""
+  },
+  {
+    "keywords": ["iOS"],
+    "name": "NHL PrePlay",
+    "color": "#56b6e9",
+    "icon": "./nhl-preplay/icon.png",
+    "description": "",
+    "screenshots": [
+      {
+        "device": "iphone8",
+        "image": "./nhl-preplay/s1.jpg"
+      },
+      {
+        "device": "iphone8",
+        "image": "./nhl-preplay/s2.jpg"
+      }
+    ]
+  },
+  {
+    "keywords": ["iOS"],
+    "name": "CBS Sports PrePlay (NFL/College Football)",
+    "color": "#0c5192",
+    "description": ""
+  },
+  {
+    "keywords": ["iOS", "FFmpeg", "Objective-C", "C++"],
+    "name": "OrbLive",
+    "description": ""
+  },
+  {
+    "keywords": ["iOS", "FFmpeg", "Objective-C", "C++"],
+    "name": "Orb Controller",
+    "description": ""
+  }
+]

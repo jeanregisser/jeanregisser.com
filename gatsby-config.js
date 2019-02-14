@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Jean Regisser`,
+    description: `Portfolio of software engineer Jean Regisser.`,
+    author: `@jeanregisser`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,6 +13,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data/`,
+      },
+    },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -30,5 +37,29 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-react-css-modules`,
+      options: {
+        // *.css files are included by default.
+        // To support another syntax (e.g. SCSS),
+        // add `postcss-scss` to your project's devDependencies
+        // and add the following option here:
+        // filetypes: {
+        //   ".scss": { syntax: `postcss-scss` },
+        // },
+
+        // Exclude global styles from the plugin using a RegExp:
+        exclude: `\/global\/`,
+        // For all the options check babel-plugin-react-css-modules README link provided above
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Montserrat:400,700"],
+        },
+      },
+    },
   ],
-}
+};
