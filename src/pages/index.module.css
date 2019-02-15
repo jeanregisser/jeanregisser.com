@@ -29,3 +29,37 @@
   scroll-snap-align: start;
   /* background-color: transparent; */
 }
+
+.fade-top {
+  animation: fade-top 1s;
+  animation-delay: 0.25s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fade-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fade-bottom {
+  animation: fade-bottom 1s;
+  animation-delay: 0.25s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

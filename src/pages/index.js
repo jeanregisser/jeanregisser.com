@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -53,38 +52,34 @@ const IndexPage = ({ data }) => {
           style={{ height: "100vh" }}
         >
           <div styleName="header">
-            <Fade top>
-              <h1>jean regisser</h1>
-            </Fade>
-            <Fade bottom>
-              <div styleName="social-links">
-                <SocialLink
-                  name="Email"
-                  icon={faEnvelope}
-                  href="mailto:jean.regisser@gmail.com"
-                />
-                <SocialLink
-                  name="Twitter"
-                  icon={faTwitter}
-                  href="https://twitter.com/jeanregisser"
-                />
-                <SocialLink
-                  name="GitHub"
-                  icon={faGithub}
-                  href="https://github.com/jeanregisser"
-                />
-                <SocialLink
-                  name="StackOverflow"
-                  icon={faStackOverflow}
-                  href="https://stackoverflow.com/users/158525/jean-regisser"
-                />
-                <SocialLink
-                  name="LinkedIn"
-                  icon={faLinkedin}
-                  href="https://www.linkedin.com/in/jeanregisser/"
-                />
-              </div>
-            </Fade>
+            <h1 styleName="fade-top">jean regisser</h1>
+            <div styleName="social-links fade-bottom">
+              <SocialLink
+                name="Email"
+                icon={faEnvelope}
+                href="mailto:jean.regisser@gmail.com"
+              />
+              <SocialLink
+                name="Twitter"
+                icon={faTwitter}
+                href="https://twitter.com/jeanregisser"
+              />
+              <SocialLink
+                name="GitHub"
+                icon={faGithub}
+                href="https://github.com/jeanregisser"
+              />
+              <SocialLink
+                name="StackOverflow"
+                icon={faStackOverflow}
+                href="https://stackoverflow.com/users/158525/jean-regisser"
+              />
+              <SocialLink
+                name="LinkedIn"
+                icon={faLinkedin}
+                href="https://www.linkedin.com/in/jeanregisser/"
+              />
+            </div>
           </div>
         </div>
         {projects.map(({ node }) => (
