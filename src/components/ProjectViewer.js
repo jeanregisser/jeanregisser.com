@@ -3,9 +3,12 @@ import { Zoom, Slide, Fade } from "react-reveal";
 import Img from "gatsby-image";
 import chroma from "chroma-js";
 import classNames from "classnames";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import ProjectIcon from "./ProjectIcon";
 import Device from "./Device";
+import PlainFrame from "./PlainFrame";
 
 import "./ProjectViewer.module.css";
 
@@ -22,6 +25,9 @@ const ProjectViewer = ({ project }) => {
       style={{ height: "100vh" }}
     >
       <div styleName="project">
+        <div styleName="scroll">
+          Scroll <FontAwesomeIcon styleName="arrow" icon={faArrowRight} />
+        </div>
         <div styleName="inner-container">
           <div styleName="background">
             <Slide right>
@@ -50,25 +56,37 @@ const ProjectViewer = ({ project }) => {
           {project.screenshots && (
             <Slide right>
               <div />
-              {project.screenshots.map(({ device, image }) => (
-                <div key={image.id} styleName="slide">
-                  <Device
-                    device={device}
-                    landscape={image.childImageSharp.fluid.aspectRatio > 1}
-                  >
-                    <Img
-                      fluid={image.childImageSharp.fluid}
-                      style={
-                        {
-                          // width: "100%",
-                          // "box-shadow":
-                          //   "0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 60px 200px 0 rgba(0, 0, 0, 0.19)",
+              {project.screenshots.map(({ device, image }) => {
+                let ImgContainer;
+                if (device === "none") {
+                  ImgContainer = PlainFrame;
+                } else {
+                  ImgContainer = Device;
+                }
+
+                const aspectRatio = image.childImageSharp.fluid.aspectRatio;
+
+                return (
+                  <div key={image.id} styleName="slide">
+                    <ImgContainer
+                      device={device}
+                      landscape={aspectRatio > 1}
+                      aspectRatio={aspectRatio}
+                    >
+                      <Img
+                        fluid={image.childImageSharp.fluid}
+                        style={
+                          {
+                            // width: "100%",
+                            // "box-shadow":
+                            //   "0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 60px 200px 0 rgba(0, 0, 0, 0.19)",
+                          }
                         }
-                      }
-                    />
-                  </Device>
-                </div>
-              ))}
+                      />
+                    </ImgContainer>
+                  </div>
+                );
+              })}
             </Slide>
           )}
         </div>

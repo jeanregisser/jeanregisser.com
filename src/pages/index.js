@@ -1,5 +1,6 @@
 import React from "react";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
@@ -80,6 +81,7 @@ const IndexPage = ({ data }) => {
                 href="https://www.linkedin.com/in/jeanregisser/"
               />
             </div>
+            <FontAwesomeIcon styleName="chevron" icon={faChevronDown} />
           </div>
         </div>
         {projects.map(({ node }) => (

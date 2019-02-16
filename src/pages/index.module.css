@@ -25,6 +25,16 @@
   /* flex-direction: column; */
 }
 
+.chevron {
+  position: absolute;
+  /* color: pink; */
+  bottom: 20px;
+  animation: fade-top 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 3;
+}
+
 .wrapper {
   scroll-snap-align: start;
   /* background-color: transparent; */

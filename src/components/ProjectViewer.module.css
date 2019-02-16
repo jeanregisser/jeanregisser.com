@@ -102,3 +102,16 @@
   align-items: center;
   background-color: white;
 }
+
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  /* display: flex; */
+  letter-spacing: 3px;
+  font-size: 15px;
+  color: white;
+}
+
+.arrow {
+}
