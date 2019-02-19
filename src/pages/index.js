@@ -18,7 +18,7 @@ import ProjectViewer from "../components/ProjectViewer";
 import "./index.module.css";
 
 const IndexPage = ({ data }) => {
-  const projects = data.allProjectsJson.edges;
+  const projects = data.allProjectsYaml.edges;
 
   // console.log("==projects", projects);
 
@@ -96,7 +96,7 @@ export default IndexPage;
 
 export const IndexQuery = graphql`
   query {
-    allProjectsJson {
+    allProjectsYaml {
       edges {
         node {
           id

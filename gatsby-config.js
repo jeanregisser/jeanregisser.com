@@ -20,6 +20,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-json`,
+    `gatsby-transformer-yaml`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

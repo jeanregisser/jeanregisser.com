@@ -23,6 +23,7 @@
     "gatsby-source-filesystem": "^2.0.20",
     "gatsby-transformer-json": "^2.1.8",
     "gatsby-transformer-sharp": "^2.1.13",
+    "gatsby-transformer-yaml": "^2.1.8",
     "lodash.throttle": "^4.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
