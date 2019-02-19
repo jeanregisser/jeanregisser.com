@@ -66,13 +66,14 @@
   justify-content: center;
   align-items: center;
   /* border: 1px solid black; */
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .first-slide {
   scroll-snap-align: start;
   width: 80vw;
+  max-width: 600px;
   justify-content: start;
   align-items: start;
   margin-left: 0px;
@@ -80,13 +81,21 @@
 }
 
 .title {
-  height: 10%;
+  height: 24vh;
   color: white;
-  padding: 40px;
+  /* padding: 40px; */
+  margin: 0;
+  margin-left: 4.1vh;
   display: flex;
   align-items: center;
-  font-size: 45px;
+  font-size: 8vmin;
   font-weight: normal;
+}
+
+@media screen and (min-height: 500px) {
+  .title {
+    font-size: 45px;
+  }
 }
 
 .title.dark {
@@ -96,9 +105,9 @@
 .icon-container {
   align-self: stretch;
   display: flex;
-  padding-left: 40px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left: 4.1vh;
+  padding-top: 2.8vh;
+  padding-bottom: 2.8vh;
   align-items: center;
   background-color: white;
 }

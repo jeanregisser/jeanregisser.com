@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  background-color: lightgray;
+  background-color: white;
   transition: background-color 0.5s;
 }
 
@@ -15,13 +15,13 @@ body.snap {
 }
 
 a {
-  color: #43a699;
+  color: #94a4ba;
   text-decoration: none;
   transition: 0.2s ease-out;
 }
 
 a:hover,
 a:focus {
-  color: #43a699;
+  color: black; /* #94a4ba; */
   transform: translate3d(0, -0.1rem, 0);
 }

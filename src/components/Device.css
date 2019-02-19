@@ -1,43 +1,65 @@
-.marvel-device-container {
-  /* background-color: brown; */
-}
+/* iphone 8 */
 
-@media screen and (min-aspect-ratio: 423/877) {
-  .marvel-device-container {
-    /* background-color: yellow; */
-  }
-  .marvel-device.iphone8 {
-    /* transform: scale(calc(100vh / 877)); */
-    font-size: calc(0.1px + 0.08vh);
-  }
+.marvel-device.iphone8 {
+  font-size: calc((80vh / 877));
 }
 
 @media screen and (max-aspect-ratio: 423/877) {
-  .marvel-device-container {
-    /* background-color: pink; */
-  }
   .marvel-device.iphone8 {
-    /* transform: scale(calc(100vw / 423)); */
-    font-size: calc(0.1px + 0.08vw);
+    font-size: calc((90vw / 423));
   }
 }
 
-@media screen and (min-aspect-ratio: 940/618) {
-  .marvel-device-container {
-    /* background-color: blue; */
-  }
-  .marvel-device.ipad {
-    /* transform: scale(calc(100vh / 877)); */
-    font-size: calc(0.1px + 0.08vh);
+.marvel-device.iphone8.landscape {
+  font-size: calc((80vh / 423));
+}
+
+@media screen and (max-aspect-ratio: 877/423) {
+  .marvel-device.iphone8.landscape {
+    font-size: calc((90vw / 877));
   }
 }
 
-@media screen and (max-aspect-ratio: 940/618) {
-  .marvel-device-container {
-    /* background-color: green; */
+/* iphone-x */
+
+.marvel-device.iphone-x {
+  font-size: calc((80vh / 864));
+}
+
+@media screen and (max-aspect-ratio: 427/864) {
+  .marvel-device.iphone-x {
+    font-size: calc((90vw / 427));
   }
+}
+
+.marvel-device.iphone-x.landscape {
+  font-size: calc((80vh / 427));
+}
+
+@media screen and (max-aspect-ratio: 864/427) {
+  .marvel-device.iphone-x.landscape {
+    font-size: calc((90vw / 864));
+  }
+}
+
+/* ipad */
+
+.marvel-device.ipad {
+  font-size: calc((80vh / 948));
+}
+
+@media screen and (max-aspect-ratio: 626/948) {
   .marvel-device.ipad {
-    /* transform: scale(calc(100vw / 423)); */
-    font-size: calc(0.1px + 0.08vw);
+    font-size: calc((90vw / 626));
+  }
+}
+
+.marvel-device.ipad.landscape {
+  font-size: calc((80vh / 626));
+}
+
+@media screen and (max-aspect-ratio: 948/626) {
+  .marvel-device.ipad.landscape {
+    font-size: calc((90vw / 948));
   }
 }

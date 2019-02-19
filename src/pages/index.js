@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => {
         />
         <div
           className="js-color-stop"
-          data-background-color={"lightgray"}
+          data-background-color={"white"}
           styleName="wrapper"
           style={{ height: "100vh" }}
         >
@@ -104,8 +104,8 @@ export const IndexQuery = graphql`
           color
           icon {
             childImageSharp {
-              fixed(width: 150, height: 150) {
-                ...GatsbyImageSharpFixed
+              fluid {
+                ...GatsbyImageSharpFluid
               }
             }
           }
