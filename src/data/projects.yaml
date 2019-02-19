@@ -43,8 +43,8 @@
   screenshots:
     - device: "none"
       image: "./mlb-preplay/s1.png"
-    - device: "none"
-      image: "./mlb-preplay/s2.png"
+    # - device: "none"
+    #   image: "./mlb-preplay/s2.png"
     - device: "none"
       image: "./mlb-preplay/s3.png"
     - device: "none"
