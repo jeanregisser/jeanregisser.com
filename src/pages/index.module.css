@@ -19,7 +19,7 @@
 
 .title {
   margin: 0;
-  font-size: 30px;
+  font-size: 28px;
   letter-spacing: 9px;
   /* compensate letter-spacing, see https://stackoverflow.com/questions/21612058/letter-spacing-wrong-text-center-alignment */
   padding-left: 9px;
