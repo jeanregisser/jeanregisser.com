@@ -74,7 +74,7 @@
 
 @keyframes fade-top {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-10vh);
     opacity: 0;
   }
   100% {
@@ -91,7 +91,7 @@
 
 @keyframes fade-bottom {
   0% {
-    transform: translateY(100%);
+    transform: translateY(10vh);
     opacity: 0;
   }
   100% {
