@@ -53,7 +53,10 @@ const IndexPage = ({ data }) => {
           style={{ height: "100vh" }}
         >
           <div styleName="header">
-            <h1 styleName="fade-top">jean regisser</h1>
+            <div styleName="fade-top">
+              <h1 styleName="title">jean regisser</h1>
+              <p styleName="description">software engineer</p>
+            </div>
             <div styleName="social-links fade-bottom">
               <SocialLink
                 name="Email"

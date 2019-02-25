@@ -17,11 +17,34 @@
   text-align: center;
 }
 
-.header > h1 {
-  margin-top: 0;
+.title {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  /* color: #999; */
+  color: #94a4ba;
+  text-transform: lowercase;
+}
+
+.description::before {
+  content: "{ ";
+  opacity: 0.5;
+}
+
+.description::after {
+  content: " }";
+  opacity: 0.5;
 }
 
 .social-links {
+  margin-top: 30px;
   display: flex;
   /* flex-direction: column; */
 }
