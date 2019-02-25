@@ -113,6 +113,8 @@ const ScrollingColorBackground = ({ selector, colorDataAttribute }) => {
       if (rgbString !== prevRgbString) {
         prevRgbString = rgbString;
         document.body.style.backgroundColor = rgbString;
+        const metaThemeColor = document.querySelector("meta[name=theme-color]");
+        metaThemeColor.setAttribute("content", rgbString);
       }
     }, 60);
 
