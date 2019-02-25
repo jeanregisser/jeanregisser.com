@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import { isIOS } from "react-device-detect";
+import vhCheck from "vh-check";
 
 import "./Layout.css";
 
@@ -14,6 +15,9 @@ const Layout = ({ children }) => {
     setTimeout(() => {
       !isIOS && document.body.classList.add("snap");
     }, 0);
+
+    // iOS / Android viewport workaround
+    vhCheck();
   });
 
   return (

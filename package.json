@@ -30,7 +30,8 @@
     "react-device-detect": "^1.6.2",
     "react-dom": "^16.8.0",
     "react-helmet": "^5.2.0",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "vh-check": "^2.0.5"
   },
   "keywords": [
     "gatsby"
