@@ -21,6 +21,8 @@
   margin: 0;
   font-size: 30px;
   letter-spacing: 9px;
+  /* compensate letter-spacing, see https://stackoverflow.com/questions/21612058/letter-spacing-wrong-text-center-alignment */
+  padding-left: 9px;
   text-transform: uppercase;
 }
 
@@ -28,7 +30,7 @@
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
   letter-spacing: 0.12em;
-  /* color: #999; */
+  padding-left: 0.12em;
   color: #94a4ba;
   text-transform: lowercase;
 }
