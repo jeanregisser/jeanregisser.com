@@ -115,6 +115,21 @@
   background-color: white;
 }
 
+.description {
+  display: flex;
+  flex: 1;
+  margin: 0 20px;
+  height: 16vh;
+  /* text-overflow: ellipsis; */
+  overflow: auto;
+}
+
+@media screen and (max-width: 600px), screen and (max-height: 600px) {
+  .description {
+    font-size: 11px;
+  }
+}
+
 .keywords {
   padding-inline-start: 4.1vh;
   color: white;

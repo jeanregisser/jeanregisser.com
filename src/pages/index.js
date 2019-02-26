@@ -111,6 +111,7 @@ export const IndexQuery = graphql`
               }
             }
           }
+          description
           keywords
           screenshots {
             device

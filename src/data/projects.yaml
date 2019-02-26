@@ -8,7 +8,7 @@
   name: "Red Bull Global Rallycross"
   color: "rgb(47, 33, 131)"
   icon: "./rbgrc/icon.png"
-  description: "Red Bull Global Rallycross hired Crossfield Digital to create an application where fans receive real time news, event updates, videos and most importantly, live race results in real time. The mobile app is powered by React Native with ~95% code sharing between iOS and Android. The app navigation is based on React Navigation. It also communicates with a Wordpress API with custom endpoints. Crossfield integrated a variety of third party applications including OneSignal for push notifications and Firebase Analytics."
+  description: "Designed and built the official Red Bull Global Rallycross app featuring real time news, event updates, videos and live race results."
   screenshots:
     - device: "iphone8"
       image: "./rbgrc/s1.png"
@@ -151,7 +151,7 @@
   name: "US Open - Charge & Watch"
   color: "#a2a2a2"
   icon: "./us-open-charge-and-watch/icon.png"
-  description: "Chase Charge & Watch is a complimentary portable device capable of charging your phone and lets you watch video data-free from the live event you’re attending. Crossfield built the device’s software while its parent company, FanVision, designed the hardware."
+  # description: "Chase Charge & Watch is a complimentary portable device capable of charging your phone and lets you watch video data-free from the live event you’re attending. Crossfield built the device’s software while its parent company, FanVision, designed the hardware."
   screenshots:
     - device: "iphone-x"
       image: "./us-open-charge-and-watch/s1.png"
@@ -206,7 +206,7 @@
   name: "Fanchise - Salt Lake Screaming Eagles"
   color: "#22086d"
   icon: "./screaming-eagles/icon.png"
-  description: "A GraphQL API powering React website, and a websocket-based system for real-time playcalling. Written in Elixir using Phoenix Channels. Featured in NYT: https://www.nytimes.com/2017/02/17/sports/football/indoor-football-league-screaming-eagles.html"
+  # description: "A GraphQL API powering React website, and a websocket-based system for real-time playcalling. Written in Elixir using Phoenix Channels. Featured in NYT: https://www.nytimes.com/2017/02/17/sports/football/indoor-football-league-screaming-eagles.html"
   screenshots:
     - device: "none"
       image: "./screaming-eagles/s1.jpg"
