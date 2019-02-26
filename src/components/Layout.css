@@ -25,3 +25,15 @@ a:focus {
   color: black; /* #94a4ba; */
   transform: translate3d(0, -0.1rem, 0);
 }
+
+footer {
+  display: flex;
+  scroll-snap-align: end;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+  font-size: 0.9rem;
+}
