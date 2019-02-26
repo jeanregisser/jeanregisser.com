@@ -25,7 +25,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Home"
         keywords={[
           `jean regisser`,
           `portfolio`,
