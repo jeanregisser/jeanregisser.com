@@ -115,6 +115,27 @@
   background-color: white;
 }
 
+.keywords {
+  padding-inline-start: 4.1vh;
+  color: white;
+  opacity: 0.8;
+  /* font-size: 2vmin; */
+}
+
+.keywords.dark {
+  color: black;
+}
+
+.keywords > li {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  /* box-sizing: border-box; */
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
 .scroll {
   position: absolute;
   bottom: 20px;
@@ -140,6 +161,10 @@
 
   .icon-container {
     padding-left: max(4.1vh, env(safe-area-inset-left));
+  }
+
+  .keywords {
+    padding-inline-start: max(4.1vh, env(safe-area-inset-left));
   }
 
   .scroll {

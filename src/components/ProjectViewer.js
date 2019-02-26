@@ -52,6 +52,15 @@ const ProjectViewer = ({ project }) => {
                 <ProjectIcon icon={project.icon} />
               </div>
             </Slide>
+            <Fade right>
+              <ul
+                styleName={classNames("keywords", { dark: !isDarkBackground })}
+              >
+                {project.keywords.map(keyword => (
+                  <li>{keyword}</li>
+                ))}
+              </ul>
+            </Fade>
           </div>
           {project.screenshots && (
             <Slide right>
