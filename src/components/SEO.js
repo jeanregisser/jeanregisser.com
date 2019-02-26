@@ -21,6 +21,10 @@ function SEO({ description, lang, meta, keywords, title }) {
             defaultTitle={`${metaTitle}`}
             meta={[
               {
+                name: `viewport`,
+                content: `width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover`,
+              },
+              {
                 name: `description`,
                 content: metaDescription,
               },

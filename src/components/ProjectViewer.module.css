@@ -26,6 +26,7 @@
   position: relative;
   display: flex;
   flex: 1;
+  padding-right: 20px;
 }
 
 .background {
@@ -125,4 +126,23 @@
 }
 
 .arrow {
+}
+
+/* iPhone notch */
+@supports (padding: max(0px)) {
+  .inner-container {
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+
+  .title {
+    margin-left: max(4.1vh, env(safe-area-inset-left));
+  }
+
+  .icon-container {
+    padding-left: max(4.1vh, env(safe-area-inset-left));
+  }
+
+  .scroll {
+    right: max(20px, env(safe-area-inset-right));
+  }
 }
