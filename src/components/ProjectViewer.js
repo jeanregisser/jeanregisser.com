@@ -39,6 +39,7 @@ const ProjectViewer = ({ project }) => {
                 {project.name}
               </div>
             </Slide>
+            <div styleName="background-banner" />
           </div>
           <div styleName="slide first-slide">
             <Fade bottom>
