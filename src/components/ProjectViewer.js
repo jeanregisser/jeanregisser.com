@@ -25,7 +25,7 @@ const ProjectViewer = ({ project }) => {
       style={{ height: "100vh" }}
     >
       <div styleName="project">
-        <div styleName="scroll">
+        <div styleName={classNames("scroll", { dark: !isDarkBackground })}>
           Scroll <FontAwesomeIcon styleName="arrow" icon={faArrowRight} />
         </div>
         <div styleName="inner-container">

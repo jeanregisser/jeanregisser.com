@@ -162,6 +162,10 @@
   padding: 5px 10px;
 }
 
+.keywords.dark > li {
+  border: 1px solid black;
+}
+
 .scroll {
   position: absolute;
   bottom: 20px;
@@ -170,6 +174,10 @@
   letter-spacing: 3px;
   font-size: 15px;
   color: white;
+}
+
+.scroll.dark {
+  color: black;
 }
 
 .arrow {
