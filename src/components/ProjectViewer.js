@@ -50,7 +50,10 @@ const ProjectViewer = ({ project }) => {
 
             <Slide left>
               <div styleName="icon-container">
-                <ProjectIcon icon={project.icon} />
+                <ProjectIcon
+                  icon={project.icon}
+                  prerendered={project.prerenderedIcon}
+                />
                 <p styleName="description">{project.description}</p>
               </div>
             </Slide>

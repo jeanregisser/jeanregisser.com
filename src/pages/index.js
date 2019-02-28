@@ -111,6 +111,7 @@ export const IndexQuery = graphql`
               }
             }
           }
+          prerenderedIcon
           description
           keywords
           screenshots {
