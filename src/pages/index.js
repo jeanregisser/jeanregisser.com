@@ -119,7 +119,7 @@ export const IndexQuery = graphql`
             image {
               id
               childImageSharp {
-                fluid {
+                fluid(maxWidth: 2048) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
