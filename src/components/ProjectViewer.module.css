@@ -82,14 +82,15 @@
   /* border: 1px solid black; */
   margin-left: 1vw;
   margin-right: 1vw;
+  flex: 1 0 auto;
 }
 
 .first-slide {
   scroll-snap-align: start;
   width: 80vw;
   max-width: 600px;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: stretch;
   margin-left: 0px;
   margin-right: -1vw;
 }
@@ -117,7 +118,6 @@
 }
 
 .icon-container {
-  align-self: stretch;
   display: flex;
   padding-left: 4.1vh;
   padding-top: 2.8vh;
@@ -142,7 +142,7 @@
 }
 
 .keywords {
-  padding-inline-start: 4.1vh;
+  padding-left: 4.1vh;
   color: white;
   opacity: 0.8;
   /* font-size: 2vmin; */

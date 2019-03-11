@@ -74,7 +74,11 @@
 
 @keyframes fade-top {
   0% {
-    transform: translateY(-10vh);
+    /* 
+     * Uses translate3d to workaround ie11 bug with vh in translateY
+     * See https://stackoverflow.com/questions/42454352/2d-transform-transition-dosent-work-with-vw-and-vh-units-in-ie11
+     */
+    transform: translate3d(0, -10vh, 0);
     opacity: 0;
   }
   100% {
@@ -91,7 +95,7 @@
 
 @keyframes fade-bottom {
   0% {
-    transform: translateY(10vh);
+    transform: translate3d(0, 10vh, 0);
     opacity: 0;
   }
   100% {
