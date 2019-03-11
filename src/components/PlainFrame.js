@@ -4,7 +4,7 @@ import "./PlainFrame.module.css";
 
 const PlainFrame = ({ aspectRatio, children }) => {
   return (
-    <div styleName="container" style={{ "--aspect-ratio": `${aspectRatio}` }}>
+    <div styleName="container" style={{ width: `calc(80vh * ${aspectRatio})` }}>
       {children}
     </div>
   );

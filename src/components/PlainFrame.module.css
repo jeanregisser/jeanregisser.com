@@ -1,5 +1,4 @@
 .container {
-  width: calc(80vh * var(--aspect-ratio));
   max-width: 90vw;
   box-shadow: 0 2vh 4vh 0 rgba(0, 0, 0, 0.2), 0 3vh 10vh 0 rgba(0, 0, 0, 0.19);
 }
