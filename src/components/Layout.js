@@ -4,6 +4,12 @@ import { StaticQuery, graphql } from "gatsby";
 import { isIOS } from "react-device-detect";
 import vhCheck from "vh-check";
 
+// This ensures that the icon CSS is loaded immediately before attempting to render icons
+// See https://github.com/FortAwesome/react-fontawesome/issues/134
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
 import "./Layout.css";
 
 const Layout = ({ children }) => {
