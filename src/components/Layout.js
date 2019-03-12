@@ -35,6 +35,8 @@ const Layout = ({ children }) => {
           site {
             siteMetadata {
               title
+              repositoryUrl
+              commitHash
             }
           }
         }
@@ -53,7 +55,11 @@ const Layout = ({ children }) => {
           >
             <main>{children}</main>
             <footer>
-              © {new Date().getFullYear()} Jean Regisser, built with&nbsp;
+              © {new Date().getFullYear()} Jean Regisser, source&nbsp;
+              <a href={data.site.siteMetadata.repositoryUrl}>
+                {data.site.siteMetadata.commitHash}
+              </a>
+              , built with&nbsp;
               <a href="https://www.gatsbyjs.org">Gatsby</a>
             </footer>
           </div>
