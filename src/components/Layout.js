@@ -8,9 +8,11 @@ import vhCheck from "vh-check";
 // See https://github.com/FortAwesome/react-fontawesome/issues/134
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 
 import "./Layout.css";
+
+// Prevent fontawesome from dynamically adding its css since we did it manually above
+config.autoAddCss = false;
 
 const Layout = ({ children }) => {
   useEffect(() => {
