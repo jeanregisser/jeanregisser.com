@@ -60,13 +60,5 @@ module.exports = {
         // For all the options check babel-plugin-react-css-modules README link provided above
       },
     },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Montserrat:400,700"],
-        },
-      },
-    },
   ],
 };
