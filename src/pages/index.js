@@ -106,7 +106,9 @@ export const IndexQuery = graphql`
           color
           icon {
             childImageSharp {
-              fluid {
+              # Hint the best image size to use
+              # default assumes 100vw which is wrong for us and ends up loading a version that's too big/heavy
+              fluid(sizes: "16vh", maxWidth: 256) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
