@@ -41,30 +41,34 @@ const Layout = ({ children }) => {
           }
         }
       `}
-      render={data => (
-        <>
-          <div
-            style={
-              {
-                // margin: `0 auto`,
-                // maxWidth: 960,
-                // padding: `0px 1.0875rem 1.45rem`,
-                // paddingTop: 0,
+      render={data => {
+        const { repositoryUrl, commitHash } = data.site.siteMetadata;
+
+        const commitUrl = `${repositoryUrl}/commit/${commitHash}`;
+        const shortCommitHash = commitHash.substring(0, 7);
+
+        return (
+          <>
+            <div
+              style={
+                {
+                  // margin: `0 auto`,
+                  // maxWidth: 960,
+                  // padding: `0px 1.0875rem 1.45rem`,
+                  // paddingTop: 0,
+                }
               }
-            }
-          >
-            <main>{children}</main>
-            <footer>
-              © {new Date().getFullYear()} Jean Regisser, source&nbsp;
-              <a href={data.site.siteMetadata.repositoryUrl}>
-                {data.site.siteMetadata.commitHash}
-              </a>
-              , built with&nbsp;
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </footer>
-          </div>
-        </>
-      )}
+            >
+              <main>{children}</main>
+              <footer>
+                © {new Date().getFullYear()} Jean Regisser, source{" "}
+                <a href={commitUrl}>{shortCommitHash}</a>, built with{" "}
+                <a href="https://www.gatsbyjs.org">Gatsby</a>
+              </footer>
+            </div>
+          </>
+        );
+      }}
     />
   );
 };

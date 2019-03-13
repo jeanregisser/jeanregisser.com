@@ -3,8 +3,9 @@ module.exports = {
     title: `Jean Regisser { software engineer }`,
     description: `Portfolio of software engineer Jean Regisser.`,
     author: `@jeanregisser`,
-    repositoryUrl: process.env.REPOSITORY_URL,
-    commitHash: process.env.COMMIT_REF,
+    // These are provided by the netlify build
+    repositoryUrl: process.env.REPOSITORY_URL || "",
+    commitHash: process.env.COMMIT_REF || "dev",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

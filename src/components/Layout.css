@@ -27,13 +27,11 @@ a:focus {
 }
 
 footer {
-  display: flex;
+  display: block;
   scroll-snap-align: end;
-  justify-content: center;
-  align-items: flex-end;
   margin-top: 100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 20px;
   background-color: white;
+  text-align: center;
   font-size: 0.9rem;
 }
