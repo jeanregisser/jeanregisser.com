@@ -121,7 +121,7 @@ export const IndexQuery = graphql`
             image {
               id
               childImageSharp {
-                fluid {
+                fluid(toFormat: JPG, quality: 80) {
                   ...GatsbyImageSharpFluid_tracedSVG
                   presentationWidth
                   presentationHeight
