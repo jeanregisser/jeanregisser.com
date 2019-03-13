@@ -78,7 +78,11 @@ const ProjectViewer = ({ project }) => {
                   ImgContainer = Device;
                 }
 
-                const aspectRatio = image.childImageSharp.fluid.aspectRatio;
+                const {
+                  aspectRatio,
+                  presentationWidth,
+                  presentationHeight,
+                } = image.childImageSharp.fluid;
 
                 return (
                   <div key={image.id} styleName="slide">
@@ -88,7 +92,12 @@ const ProjectViewer = ({ project }) => {
                       aspectRatio={aspectRatio}
                     >
                       <Img
-                        fluid={image.childImageSharp.fluid}
+                        fluid={{
+                          ...image.childImageSharp.fluid,
+                          // Hint the best image size to use
+                          // default assumes 100vw which is wrong for us and ends up loading a version that's too big/heavy
+                          sizes: `(min-aspect-ratio: ${presentationWidth}/${presentationHeight}) calc(80vh * ${aspectRatio}), 90vw`,
+                        }}
                         style={
                           {
                             // width: "100%",
