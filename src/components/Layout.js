@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 
     // iOS / Android viewport workaround
     vhCheck();
-  });
+  }, []);
 
   return (
     <StaticQuery
