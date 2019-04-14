@@ -22,6 +22,17 @@
   -webkit-overflow-scrolling: touch;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  /*
+   * Disable scroll snap on iOS because of the visual glitch when combined with an animation
+   * See https://stackoverflow.com/questions/52989070/css-scroll-snap-visual-glitches-on-ios-when-programmatically-setting-style-on
+   * scroll snap used to work fine (no glitch) until iOS 12.2 though :/
+   */
+  .project {
+    scroll-snap-type: none;
+  }
+}
+
 .inner-container {
   position: relative;
   display: flex;
