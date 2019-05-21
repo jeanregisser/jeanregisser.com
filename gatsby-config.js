@@ -4,7 +4,11 @@ module.exports = {
     description: `Portfolio of software engineer Jean Regisser.`,
     author: `@jeanregisser`,
     // These are provided by the netlify build
-    repositoryUrl: process.env.REPOSITORY_URL || "",
+    repositoryUrl:
+      (process.env.REPOSITORY_URL &&
+        // strip out the auth info present in the url
+        url.format(new URL(process.env.REPOSITORY_URL), { auth: false })) ||
+      "",
     commitHash: process.env.COMMIT_REF || "dev",
   },
   plugins: [
