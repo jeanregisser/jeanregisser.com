@@ -1055,9 +1055,9 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.1.tgz#5c85d662f76fa1d34575766c5dcd6615abcd30d8"
   integrity sha512-FZdkNBDqBRHKQ2MEbSC17xnPFOhZxeJ2YGSfr2BKf3sujG49Qe3bB+rGCwQfIaA7WHnGeGkSijX4FuBCdrzW/g==
 
-Devices.css@Hustle/devices.css:
+Devices.css@jeanregisser/devices.css:
   version "0.0.1"
-  resolved "https://codeload.github.com/Hustle/devices.css/tar.gz/5d1a236459a7ec70742318f88efff91063321c0e"
+  resolved "https://codeload.github.com/jeanregisser/devices.css/tar.gz/7a61270b17aa8ca6524bfb6e73a290f3185dd080"
 
 abbrev@1:
   version "1.1.1"

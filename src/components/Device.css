@@ -1,65 +1,65 @@
 /* iphone 8 */
 
 .marvel-device.iphone8 {
-  font-size: calc((80vh / 877));
+  font-size: calc((80vh / 877) * 100);
 }
 
 @media screen and (max-aspect-ratio: 423/877) {
   .marvel-device.iphone8 {
-    font-size: calc((90vw / 423));
+    font-size: calc((90vw / 423) * 100);
   }
 }
 
 .marvel-device.iphone8.landscape {
-  font-size: calc((80vh / 423));
+  font-size: calc((80vh / 423) * 100);
 }
 
 @media screen and (max-aspect-ratio: 877/423) {
   .marvel-device.iphone8.landscape {
-    font-size: calc((90vw / 877));
+    font-size: calc((90vw / 877) * 100);
   }
 }
 
 /* iphone-x */
 
 .marvel-device.iphone-x {
-  font-size: calc((80vh / 864));
+  font-size: calc((80vh / 864) * 100);
 }
 
 @media screen and (max-aspect-ratio: 427/864) {
   .marvel-device.iphone-x {
-    font-size: calc((90vw / 427));
+    font-size: calc((90vw / 427) * 100);
   }
 }
 
 .marvel-device.iphone-x.landscape {
-  font-size: calc((80vh / 427));
+  font-size: calc((80vh / 427) * 100);
 }
 
 @media screen and (max-aspect-ratio: 864/427) {
   .marvel-device.iphone-x.landscape {
-    font-size: calc((90vw / 864));
+    font-size: calc((90vw / 864) * 100);
   }
 }
 
 /* ipad */
 
 .marvel-device.ipad {
-  font-size: calc((80vh / 948));
+  font-size: calc((80vh / 948) * 100);
 }
 
 @media screen and (max-aspect-ratio: 626/948) {
   .marvel-device.ipad {
-    font-size: calc((90vw / 626));
+    font-size: calc((90vw / 626) * 100);
   }
 }
 
 .marvel-device.ipad.landscape {
-  font-size: calc((80vh / 626));
+  font-size: calc((80vh / 626) * 100);
 }
 
 @media screen and (max-aspect-ratio: 948/626) {
   .marvel-device.ipad.landscape {
-    font-size: calc((90vw / 948));
+    font-size: calc((90vw / 948) * 100);
   }
 }
